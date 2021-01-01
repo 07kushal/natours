@@ -14,6 +14,9 @@ function App() {
                         is where life happens
                     </span>
                 </h1>
+                <a href="#" className="btn btn-white">
+                    Discover our tours
+                </a>
             </div>
         </header>
     );
