@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./theme/styles/sass/main.scss";
 import logoWhite from "./assets/logo-white.png"; // Tell webpack this JS file uses this image
 
 function App() {

@@ -1,0 +1,15 @@
+*,
+::after,
+::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+html {
+    // value of 1 rem is 10px
+    font-size: 62.5%; /* 100%->16px so 10/60->.625 so .625*16->10px; */
+}
+
+body {
+    box-sizing: border-box;
+}
