@@ -28,7 +28,7 @@ function App() {
                         </h2>
                     </div>
                 </section>
-                <section>
+                {/* <section>
                     <div className="grid-test">
                         <div className="row">
                             <div className="col-1-of-2">col-1-of-2</div>
@@ -59,7 +59,7 @@ function App() {
                             <div className="col-3-of-4">col-3-of-4</div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
         </>
     );
