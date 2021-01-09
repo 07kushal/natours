@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Oceanic Next (dimmed bg)",
-    "files.autoSave": "onFocusChange",
     "editor.minimap.enabled": true,
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
@@ -11,6 +10,7 @@
         "statusBar.noFolderBackground": "#333333",
         "statusBar.debuggingBackground": "#263238"
     },
+
     "editor.fontSize": 14,
 
     "css.validate": false,
