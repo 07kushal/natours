@@ -1,3 +1,5 @@
+@import "../css/icon-font.css";
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/functions";
@@ -9,6 +11,7 @@
 
 @import "components/button";
 @import "components/composition";
+@import "components/feature-box";
 
 @import "layout/grid";
 @import "layout/header";
