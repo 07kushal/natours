@@ -143,10 +143,41 @@ function App() {
                         <div className="col-1-of-3">
                             <div className="card">
                                 <div className="card__side card__side--front">
-                                    FRONT
+                                    <div className="card__picture card__picture--1">
+                                        &nbsp;
+                                    </div>
+                                    <div className="card__heading card__heading--1">
+                                        <span className="card__heading-span card__heading-span--1">
+                                            {"the sea explorer"}
+                                        </span>
+                                    </div>
+                                    <div className="card__details">
+                                        <ul>
+                                            <li>3 Days tours</li>
+                                            <li>Up to 30 people</li>
+                                            <li>2 tour guide</li>
+                                            <li>Sleep in cozy hotels</li>
+                                            <li>Difficulty :easy</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div className="card__side card__side--back card__side--back-1">
-                                    BACK
+                                    <div className="card__cta">
+                                        <div className="card__price-box">
+                                            <p className="card__price-only">
+                                                Only
+                                            </p>
+                                            <p className="card__price-value">
+                                                $297
+                                            </p>
+                                        </div>
+                                        <a
+                                            href="#bar"
+                                            className="btn btn--white"
+                                        >
+                                            Book Now!
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

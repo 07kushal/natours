@@ -1,11 +1,11 @@
 .card {
+    // FUNCTIONALLY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
     &__side {
-        // background-color: orangered;
-        height: 50rem;
+        height: 52rem;
         color: $color-white;
         font-size: 2rem;
         transition: all 0.8s ease;
@@ -18,11 +18,11 @@
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         color: $color-black;
+        overflow: hidden;
         &--front {
             background-color: $color-white;
         }
         &--back {
-            // background-color: pink;
             transform: rotateY(-180deg);
             &-1 {
                 background-image: linear-gradient(
@@ -56,5 +56,81 @@
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &--1 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark
+                ),
+                url("../../../../assets/nat-5.jpg");
+        }
+        &--2 {
+            background-image: url("../../../../assets/nat-5.jpg");
+        }
+        &--3 {
+            background-image: url("../../../../assets/nat-5.jpg");
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $color-white;
+        text-align: right;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, 0.85),
+                rgba($color-secondary-dark, 0.85)
+            );
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            margin: 0 auto;
+            list-style: none;
+            width: 80%;
+            li {
+                font-size: 1.5rem;
+                padding: 1rem;
+                text-align: center;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light2;
+                }
+            }
+        }
+    }
+    // BACK SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &__price-box {
+        }
+        &__price-only {
+        }
+        &__price-value {
+        }
     }
 }
