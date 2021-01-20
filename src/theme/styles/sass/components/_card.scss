@@ -6,7 +6,6 @@
     height: 52rem;
     &__side {
         height: 52rem;
-        color: $color-white;
         font-size: 2rem;
         transition: all 0.8s ease;
         position: absolute;
@@ -17,7 +16,7 @@
         // comment the above 5 lines to understand the behaver :kushal
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-        color: $color-black;
+        // color: $color-black;
         overflow: hidden;
         &--front {
             background-color: $color-white;
@@ -64,6 +63,8 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         &--1 {
             background-image: linear-gradient(
                     to right bottom,
@@ -73,10 +74,20 @@
                 url("../../../../assets/nat-5.jpg");
         }
         &--2 {
-            background-image: url("../../../../assets/nat-5.jpg");
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
+                ),
+                url("../../../../assets/nat-6.jpg");
         }
         &--3 {
-            background-image: url("../../../../assets/nat-5.jpg");
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark
+                ),
+                url("../../../../assets/nat-7.jpg");
         }
     }
     &__heading {
@@ -100,6 +111,20 @@
                 to right bottom,
                 rgba($color-secondary-light, 0.85),
                 rgba($color-secondary-dark, 0.85)
+            );
+        }
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.85),
+                rgba($color-primary-dark, 0.85)
+            );
+        }
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary-light, 0.85),
+                rgba($color-tertiary-dark, 0.85)
             );
         }
     }
@@ -126,11 +151,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        &__price-box {
-        }
-        &__price-only {
-        }
-        &__price-value {
-        }
+        width: 90%;
+        text-align: center;
+    }
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
