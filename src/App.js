@@ -3,6 +3,9 @@ import logoWhite from "./assets/logo-white.png"; // Tell webpack this JS file us
 import nat_1 from "./assets/nat-1-large.jpg";
 import nat_2 from "./assets/nat-2-large.jpg";
 import nat_3 from "./assets/nat-3-large.jpg";
+import nat_8 from "./assets/nat-8.jpg";
+
+import nat_9 from "./assets/nat-9.jpg";
 
 function App() {
     return (
@@ -266,6 +269,74 @@ function App() {
                     </div>
                     <div className="u-center-text u-margin-top-big">
                         <a href="#bar" className="btn btn--green u-font-weight">
+                            Discover all tours
+                        </a>
+                    </div>
+                </section>
+                <section className="section-stories">
+                    <div className="u-center-text u-margin-bottom-big">
+                        <h2 className="heading-secondary">
+                            We make people genuinely happy
+                        </h2>
+                    </div>
+                    <div className="row">
+                        <div className="story">
+                            <figure className="story__shape">
+                                <img
+                                    src={nat_8}
+                                    alt="Person on a tour"
+                                    className="story__image"
+                                />
+                                <figcaption className="story__caption">
+                                    {"Mary Smith"}
+                                </figcaption>
+                            </figure>
+                            <div className="story__text">
+                                <h3 className="heading-tertiary u-margin-bottom-small">
+                                    I had the best week ever with my family
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Voluptatem quibusdam
+                                    laudantium voluptatibus veniam non facilis
+                                    qui numquam sit labore architecto laboriosam
+                                    corrupti sed illo, cum, excepturi, iste id.
+                                    Nam, explicabo! laudantium voluptatibus
+                                    veniam non facilis qui numquam sit labore
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="story">
+                            <figure className="story__shape">
+                                <img
+                                    src={nat_9}
+                                    alt="Person on a tour"
+                                    className="story__image"
+                                />
+                                <figcaption className="story__caption">
+                                    {"Jack Wilson"}
+                                </figcaption>
+                            </figure>
+                            <div className="story__text">
+                                <h3 className="heading-tertiary u-margin-bottom-small">
+                                    {"WOW! My life is completely different now"}
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Voluptatem quibusdam
+                                    laudantium voluptatibus veniam non facilis
+                                    qui numquam sit labore architecto laboriosam
+                                    corrupti sed illo, cum, excepturi, iste id.
+                                    Nam, explicabo! laudantium voluptatibus
+                                    veniam non facilis qui numquam sit labore
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="u-center-text u-margin-top-big">
+                        <a href="#bar" className="btn-text">
                             Discover all tours
                         </a>
                     </div>
